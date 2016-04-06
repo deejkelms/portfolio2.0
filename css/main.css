@@ -1,0 +1,669 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+
+html,body{
+    height:100%;
+    margin:0;
+}
+
+h1, p{
+    font-family: 'Open Sans', verdana;
+}
+
+/* LANDING PAGE */
+
+
+    .container.landingPage {
+        width:100%;
+        height:100%;
+        margin:0;
+        background-image:url(../img/dkbg.jpg);
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat:no-repeat;
+        background-size:cover;
+        opacity:1;
+        display:table;
+        text-align:center;
+        padding-left:0;
+    }
+
+    .lpMiddle{
+        width:100%;
+        display:table-cell;
+        vertical-align: middle;
+        margin-left:0;
+        opacity:.8;
+        margin-right:0;
+        height:100%;
+        width:100%;
+        padding-left:0;
+        margin-right:15px;
+    }
+
+    .lpInner {
+        margin-top:auto;
+        margin-bottom:auto;
+        width:100%;
+    }
+
+
+
+    .landingPage img {
+        width:60px;
+        margin-bottom:20px;
+    }
+
+
+    .lpMiddle p {
+        text-transform: uppercase;
+        font-family:'Open Sans', verdana;
+        font-size:12px;
+        letter-spacing: 1px;
+    }
+
+
+
+/* ABOUT PAGE */
+
+    .aboutPage {
+        width:100%;
+        height:100%;
+        margin:0;
+    }
+
+    .aboutPage {
+        background-color:#f2f2f2;
+    }
+
+    .name {
+        padding-top:60px;
+        text-align:center;
+        margin-bottom:20px;
+        font-family:'Open Sans', verdana;
+    }
+
+    .bio {
+        text-align:center;
+        padding-top:5px;
+    }
+
+    .skill-button{
+        margin-top:60px;
+        padding-bottom:10px;
+        border-bottom:2px solid white;
+    }
+
+    .button {
+        height:50px;
+        
+    }
+
+
+    .skill {
+        margin-top:20px;
+    }
+
+    .FEBE {
+        text-align:center;
+    }
+    
+/* PROJECTS PAGE */
+
+.projectsPage .container{
+    width:100%;
+    height:100%;
+    padding-bottom:100px;
+    margin-bottom:50px;
+}
+
+#project{
+    text-align:center;
+    text-transform: uppercase;
+    font-family:'Open Sans', verdana;
+    letter-spacing:1px;
+    padding-top:60px;
+    padding-bottom:40px;
+
+}
+
+.projectBox{
+    margin-top:20px;
+    width:100%;
+    height:200px;
+    background-color:#a4e1e1;
+}
+
+.fanluv > img {
+    background-color:#a4e1e1;
+    opacity:1;
+    width:100%;
+    height:200px;
+    transition: .5s ease;
+}
+
+.fanluv > img:hover {
+    opacity:.3;
+    transition: .5s ease;
+}
+
+.blog > img {
+    height:100%;
+    width:100%;
+    transition: .5s ease;
+    opacity:1;
+    background-color:#a4e1e1;
+}
+
+.blog >img:hover {
+    opacity: .3;
+}
+
+.walkr > img {
+    background-color:#a4e1e1;
+    opacity:1;
+    width:100%;
+    height:100%;
+    transition: .5s ease;
+}
+
+.walkr > img:hover {
+    opacity:.3;
+    transition: .5s ease;
+}
+
+.repl > img {
+    height:100%;
+    width:100%;
+    transition: .5s ease;
+    opacity:1;
+    background-color:#a4e1e1;
+}
+
+
+/* RESUME */
+
+.resumePage{
+    height:450px;
+    width:100%;
+    background-color:#f2f2f2;
+    text-align:center;
+}
+
+.resblock{
+    width:100%;
+    height:450px;
+    line-height:100px;
+    vertical-align:center;
+    text-align: center;
+    display:table;
+}
+
+.resblock:before{
+    content: '';
+    display: inline-block;
+    height:100%;
+    vertical-align:middle;
+}
+
+.resume-download{
+    display:inline-block;
+    vertical-align:center;
+    width:100%;
+}
+
+
+.resume{
+    font-family:'Open Sans', verdana;
+    height:100%;
+    vertical-align:center;
+    text-transform:uppercase;
+}
+
+
+/* CONTACT */
+
+.phone {
+    color: #4dd2ff;
+}
+
+.contactPage {
+    width:100%;
+    height:auto;
+    margin:0;
+    background-color:#262626;
+    padding-top:40px;
+}
+
+.contactPage img {
+    height:200px;
+    width:200px;
+    border-radius:50%;
+}
+
+.personalPic{
+    border-radius:50%;
+    max-height: 200px;
+    width:auto;
+    background-color:#a4e1e1;
+    margin-top:50px;
+
+}
+
+.sticker {
+    max-height:100px;
+    max-width:100px;
+    margin-top:55px;
+}
+
+#icons {
+    text-align:right;
+    font-size: 1.5em;
+    color: white !important;
+    margin-bottom:20px;
+/*    margin-top: 20px;
+*/}
+
+.icon.fa {
+    color: white;
+}
+
+.fa:hover {
+    color: gray;
+}
+
+.outro {
+    color: white;
+}
+.contact {
+    color: gray;
+}
+
+/*FOOTER*/
+/*.section--dark {
+    background: #262626;
+}
+
+.footer {
+    max-width: 75em;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2.5rem;
+    padding-bottom: 1.25rem
+}
+
+.footer::after {
+    clear: both;
+    content: "";
+    display: table
+}
+
+.footer .about, .footer .info {
+    float: left;
+    display: block;
+    margin-right: 1.96078%;
+    width: 100%
+}
+
+.footer .about:last-child, .footer .info:last-child {
+    margin-right: 0
+}
+
+@media screen and (min-width: 768px) {
+    .footer .about, .footer .info {
+        float: left;
+        display: block;
+        margin-right: 1.96078%;
+        width: 49.01961%;
+    }
+
+    .footer .about:last-child, .footer .info:last-child {
+        margin-right: 0
+    }
+}
+
+.footer h4, .footer p, .footer ul {
+    margin-left: 4.6875rem;
+    max-width: 400px
+}
+
+@media screen and (min-width: 768px) {
+    .footer h4, .footer p, .footer ul {
+        margin-left: 5.9375rem;
+    }
+}
+
+.footer .about img {
+    height: 3.75rem;
+    width: 3.75rem;
+    display: block;
+    float: left;
+    border-radius: 50%
+}
+
+@media screen and (min-width: 768px) {
+    .footer .about img {
+        height: 10rem;
+        width: 10rem;
+        margin-bottom: 50px;
+        margin-right: 15px;
+    }
+}
+
+.footer .about h4 {
+    color: #fff
+}
+
+.footer .about p {
+    color: gray;
+}
+
+@media screen and (min-width: 768px) {
+    .footer .info ul, .footer .info p {
+        float: right;
+        clear: both;
+        text-align: right;
+    }
+}
+
+.footer .info ul {
+    height: auto;
+    width: 100%
+}
+
+.footer .info ul::after {
+    clear: both;
+    content: "";
+    display: table
+}
+
+.footer .info ul li {
+    margin: 0 0.3125rem 0 0;
+    display: inline-block
+}
+
+.footer .info small {
+    color: #404040
+}
+*/
+
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
