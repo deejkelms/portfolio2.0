@@ -261,7 +261,7 @@ h1, p{
 
     .aboutPage {
         width:100%;
-        height:870px;
+        height:750px;
         margin:0;
     }
 
@@ -333,8 +333,58 @@ section.projectsPage {
     background-color:#4dd2ff;
 }
 
+.projectBox a span {
+    position: absolute;
+    z-index: 99999;
+    background: #fff;
+    background: rgba(255,255,255,1);
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    height: 40px;
+    line-height: 40px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+    color: #C73B6F;
+    text-align: center;
+    top: 50%;
+    margin-top: -25px;
+    width: 70%;
+    left: 15%;
+    opacity: 0;
+    transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+}
 
-.repl > img {
+.button {
+    font-size: 0.75rem;
+    line-height: 3.05rem;
+    padding: 0.9375rem 1.5625rem;
+    transition: all 0.3s ease;
+    color: #fff;
+    cursor: pointer;
+    border: 2px solid #fff;
+    border: 2px solid rgba(255,255,255,0.5);
+    background: transparent;
+    font-weight: 500;
+    text-align: center;
+}
+
+
+.overlay {
+    background: #4dd2ff;
+    background: rgba(77, 210, 255, 0.75);
+}
+
+a {
+    transition: all 0.3s ease;
+    color: #C32F34;
+    text-decoration: none;
+}
+
+/*.repl > img {
     height:200px;
     width:100%;
     transition: .5s ease;
@@ -398,7 +448,7 @@ section.projectsPage {
 
 .blog >img:hover {
     opacity: .3;
-}
+}*/
 
 
 
@@ -444,7 +494,7 @@ section.projectsPage {
 
 .button--white {
     font-size: 2rem;
-    line-height: 2rem;
+    line-height: 3rem;
     padding: 1rem 1.5rem;
     transition: all 0.3s ease;
     color: #4dd2ff;
@@ -453,7 +503,10 @@ section.projectsPage {
     border: 2px #4dd2ff;
     background: transparent;
     font-weight: 500;
+    text-align: center;
+    display: inline-block;
 }
+
 
 
 /* CONTACT */
@@ -515,113 +568,171 @@ section.projectsPage {
     color: gray;
 }
 
-/*FOOTER*/
-/*.section--dark {
-    background: #262626;
+
+
+
+/*OTHER PROJECTS*/
+.section {
+    padding: 0 0.9375rem;
+    position: relative;
+    background: #ffffff;
+    overflow: hidden;
+    display: block;
 }
 
-.footer {
+
+.section article {
     max-width: 75em;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 2.5rem;
-    padding-bottom: 1.25rem
 }
 
-.footer::after {
-    clear: both;
-    content: "";
-    display: table
+.section--white {
+    background: #fff;
+    padding-bottom: 50px;
 }
 
-.footer .about, .footer .info {
-    float: left;
-    display: block;
-    margin-right: 1.96078%;
-    width: 100%
+.item.work {
+    margin-bottom: 0;
+    position: relative;
+    z-index: 10;
+    overflow: hidden
 }
 
-.footer .about:last-child, .footer .info:last-child {
-    margin-right: 0
-}
-
-@media screen and (min-width: 768px) {
-    .footer .about, .footer .info {
+@media screen and (min-width: 640px) {
+    .item.work {
         float: left;
         display: block;
         margin-right: 1.96078%;
         width: 49.01961%;
+        clear: none;
     }
 
-    .footer .about:last-child, .footer .info:last-child {
+    .item.work:last-child {
         margin-right: 0
     }
-}
 
-.footer h4, .footer p, .footer ul {
-    margin-left: 4.6875rem;
-    max-width: 400px
-}
+    .item.work:nth-child(2n) {
+        margin-right: 0
+    }
 
-@media screen and (min-width: 768px) {
-    .footer h4, .footer p, .footer ul {
-        margin-left: 5.9375rem;
+    .item.work:nth-child(2n + 1) {
+        clear: left
     }
 }
 
-.footer .about img {
-    height: 3.75rem;
-    width: 3.75rem;
-    display: block;
+@media screen and (min-width: 768px) {
+    .item.work {
+        float: left;
+        display: block;
+        margin-right: 1.96078%;
+        width: 32.02614%;
+    }
+
+    .item.work:last-child {
+        margin-right: 0
+    }
+
+    .item.work:nth-child(2n) {
+        margin-right: 1.96078%
+    }
+
+    .item.work:nth-child(2n + 1) {
+        clear: none
+    }
+
+    .item.work:nth-child(3n) {
+        margin-right: 0
+    }
+
+    .item.work:nth-child(3n + 1) {
+        clear: left
+    }
+}
+
+.item.work p {
+    font-size: 0.875rem;
+    line-height: 1.225rem
+}
+
+.item.work a {
+    height: 100%;
+    width: 100%;
+    margin-bottom: 0.625rem;
     float: left;
-    border-radius: 50%
+    position: relative;
+    z-index: 10;
+    overflow: hidden
 }
 
-@media screen and (min-width: 768px) {
-    .footer .about img {
-        height: 10rem;
-        width: 10rem;
-        margin-bottom: 50px;
-        margin-right: 15px;
-    }
+.item.work a:hover .overlay {
+    opacity: 1
 }
 
-.footer .about h4 {
-    color: #fff
+.item.work a:hover img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center
 }
 
-.footer .about p {
-    color: gray;
+.item.work a .overlay {
+    transition: opacity 0.3s ease;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    position: absolute;
+    z-index: 50
 }
 
-@media screen and (min-width: 768px) {
-    .footer .info ul, .footer .info p {
-        float: right;
-        clear: both;
-        text-align: right;
-    }
+.item.work a .overlay .button {
+    margin: -1.625rem 0 0 -4.4375rem;
+    position: absolute;
+    z-index: 100;
+    top: 50%;
+    left: 50%
 }
 
-.footer .info ul {
-    height: auto;
-    width: 100%
+.item.work img {
+    transition: all 1s ease;
+    filter: url("data:image/svg+xml;utf8,<svg%20xmlns=\'http://www.w3.org/2000/svg\'><filter%20id=\'grayscale\'><feColorMatrix%20type=\'matrix\'%20values=\'0.3333%200.3333%200.3333%200%200%200.3333%200.3333%200.3333%200%200%200.3333%200.3333%200.3333%200%200%200%200%200%201%200\'/></filter></svg>#grayscale");
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: auto
 }
 
-.footer .info ul::after {
-    clear: both;
-    content: "";
-    display: table
+
+/*.button {
+    font-size: 0.75rem;
+    line-height: 1.05rem;
+    padding: 0.9375rem 1.5625rem;
+    transition: all 0.3s ease;
+    color: #fff;
+    cursor: pointer;
+    border: 2px solid #fff;
+    border: 2px solid rgba(255,255,255,0.5);
+    background: transparent;
+    font-weight: 500;
+    text-align: center;
 }
 
-.footer .info ul li {
-    margin: 0 0.3125rem 0 0;
-    display: inline-block
+.button, .button--white, .icon {
+    display: inline-block;
+}*/
+
+.overlay {
+    background: #4dd2ff;
+    background: rgba(77, 210, 255, 0.75);
 }
 
-.footer .info small {
-    color: #404040
+a {
+    transition: all 0.3s ease;
+    color: #C32F34;
+    text-decoration: none;
 }
-*/
 
 }
 
