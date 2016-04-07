@@ -210,7 +210,7 @@ h1, p{
         width:100%;
         height:100%;
         margin:0;
-        background-image:url(../img/dkbg.jpg);
+        background-image:url(../img/ny.jpg);
         background-attachment: fixed;
         background-position: center;
         background-repeat:no-repeat;
@@ -261,7 +261,7 @@ h1, p{
 
     .aboutPage {
         width:100%;
-        height:100%;
+        height:870px;
         margin:0;
     }
 
@@ -303,10 +303,14 @@ h1, p{
     
 /* PROJECTS PAGE */
 
+section.projectsPage {
+    margin-left:50px;
+    margin-right:50px;
+}
+
 .projectsPage .container{
     width:100%;
     height:100%;
-    padding-bottom:100px;
     margin-bottom:50px;
 }
 
@@ -317,18 +321,62 @@ h1, p{
     letter-spacing:1px;
     padding-top:60px;
     padding-bottom:40px;
-
+}
+.projectsPage .row {
+    padding-left:5px;
+    padding-right:5px;
 }
 
 .projectBox{
-    margin-top:20px;
     width:100%;
+    height:100%;
+    background-color:#4dd2ff;
+}
+
+
+.repl > img {
     height:200px;
+    width:100%;
+    transition: .5s ease;
+    opacity:1;
     background-color:#a4e1e1;
 }
 
-.fanluv > img {
+.repl > img:hover {
+    opacity:.3;
+    transition: .5s ease;
+}
+
+.walkr > img {
     background-color:#a4e1e1;
+    opacity:1;
+    width:100%;
+    height:200px;
+    transition: .5s ease;
+}
+
+.walkr > img:hover {
+    opacity:.3;
+    transition: .5s ease;
+}
+
+
+.voterSim > img {
+    background-color:#a4e1e1;
+    opacity:1;
+    width:100%;
+    height:200px;
+    transition: .5s ease;
+}
+
+.voterSim > img:hover {
+    opacity:.3;
+    transition: .5s ease;
+}
+
+
+.fanluv > img{
+    background-color:#4dd2ff;
     opacity:1;
     width:100%;
     height:200px;
@@ -341,37 +389,18 @@ h1, p{
 }
 
 .blog > img {
-    height:100%;
+    height:200px;
     width:100%;
     transition: .5s ease;
     opacity:1;
-    background-color:#a4e1e1;
+    background-color:#4dd2ff;
 }
 
 .blog >img:hover {
     opacity: .3;
 }
 
-.walkr > img {
-    background-color:#a4e1e1;
-    opacity:1;
-    width:100%;
-    height:100%;
-    transition: .5s ease;
-}
 
-.walkr > img:hover {
-    opacity:.3;
-    transition: .5s ease;
-}
-
-.repl > img {
-    height:100%;
-    width:100%;
-    transition: .5s ease;
-    opacity:1;
-    background-color:#a4e1e1;
-}
 
 
 /* RESUME */
@@ -386,7 +415,7 @@ h1, p{
 .resblock{
     width:100%;
     height:450px;
-    line-height:100px;
+    line-height:40px;
     vertical-align:center;
     text-align: center;
     display:table;
@@ -411,6 +440,19 @@ h1, p{
     height:100%;
     vertical-align:center;
     text-transform:uppercase;
+}
+
+.button--white {
+    font-size: 2rem;
+    line-height: 2rem;
+    padding: 1rem 1.5rem;
+    transition: all 0.3s ease;
+    color: #4dd2ff;
+    cursor: pointer;
+    border: 2px #4dd2ff;
+    border: 2px #4dd2ff;
+    background: transparent;
+    font-weight: 500;
 }
 
 
@@ -447,6 +489,7 @@ h1, p{
     max-height:100px;
     max-width:100px;
     margin-top:55px;
+    padding-right: 5px;
 }
 
 #icons {
