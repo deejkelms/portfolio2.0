@@ -96,6 +96,7 @@ textarea {
    ========================================================================== */
 
 
+
 @media only screen and (max-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
 
@@ -136,7 +137,7 @@ h1, p{
         margin-right:0;
         height:100%;
         width:100%;
-        padding-left:0;
+        padding-left:50px;
         margin-right:15px;
     }
 
@@ -149,7 +150,7 @@ h1, p{
 
 
     .landingPage img {
-        width:60px;
+        width:80px;
         margin-bottom:20px;
     }
 
@@ -157,7 +158,7 @@ h1, p{
     .lpMiddle p {
         text-transform: uppercase;
         font-family:'Open Sans', verdana;
-        font-size:12px;
+        font-size:20px;
         letter-spacing: 1px;
     }
 
@@ -171,11 +172,9 @@ section.aboutPage {
 
     .aboutPage {
         width:100%;
-        height:750px;
+        height:auto;
         margin:0;
-    }
-
-    .aboutPage {
+        padding-bottom:50px;
     }
 
     .name {
@@ -294,6 +293,8 @@ section.projectsPage {
     overflow: hidden
 }
 
+
+
 @media screen and (min-width: 640px) {
     .item.work {
         float: left;
@@ -346,8 +347,8 @@ section.projectsPage {
 }
 
 .item.work p {
-    font-size: 0.875rem;
-    line-height: 1.225rem
+    font-size: 1.5rem;
+    line-height: 2rem
 }
 
 .item.work a {
@@ -398,6 +399,8 @@ section.projectsPage {
     width: 100%;
     height: auto
 }
+
+
 
 .button {
     font-size: 0.75rem;
@@ -539,6 +542,8 @@ a {
 }
 
 .outro {
+    padding-top: 10px;
+    padding-left:40px;
     color: white;
 }
 .contact {
@@ -547,7 +552,6 @@ a {
 
 
 }
-
 
 
 
@@ -643,6 +647,19 @@ h1, p{
     font-family: 'Open Sans', verdana;
 }
 
+#navlogo{
+    background-image:url('../img/navlogo.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+    /*background-position: center;*/
+    height:75px;
+    width:150px;
+    margin:0 auto;
+    visibility: visible;
+}
+
+
+
 /* LANDING PAGE */
 
 
@@ -683,7 +700,7 @@ h1, p{
 
 
     .landingPage img {
-        width:60px;
+        width:80px;
         margin-bottom:20px;
     }
 
@@ -693,15 +710,21 @@ h1, p{
         font-family:'Open Sans', verdana;
         font-size:12px;
         letter-spacing: 1px;
+        color:black;
     }
 
+    .titleSkill{
+        text-transform: uppercase;
+        letter-spacing:1px;
+        font-size:12px;
+    }
 
 
 /* ABOUT PAGE */
 
     .aboutPage {
         width:100%;
-        height:750px;
+        height:1000px;
         margin:0;
     }
 
@@ -798,74 +821,6 @@ section.projectsPage {
 }
 
 
-/*.repl > img {
-    height:200px;
-    width:100%;
-    transition: .5s ease;
-    opacity:1;
-    background-color:#a4e1e1;
-}
-
-.repl > img:hover {
-    opacity:.3;
-    transition: .5s ease;
-}
-
-.walkr > img {
-    background-color:#a4e1e1;
-    opacity:1;
-    width:100%;
-    height:200px;
-    transition: .5s ease;
-}
-
-.walkr > img:hover {
-    opacity:.3;
-    transition: .5s ease;
-}
-
-
-.voterSim > img {
-    background-color:#a4e1e1;
-    opacity:1;
-    width:100%;
-    height:200px;
-    transition: .5s ease;
-}
-
-.voterSim > img:hover {
-    opacity:.3;
-    transition: .5s ease;
-}
-
-
-.fanluv > img{
-    background-color:#4dd2ff;
-    opacity:1;
-    width:100%;
-    height:200px;
-    transition: .5s ease;
-}
-
-.fanluv > img:hover {
-    opacity:.3;
-    transition: .5s ease;
-}
-
-.blog > img {
-    height:200px;
-    width:100%;
-    transition: .5s ease;
-    opacity:1;
-    background-color:#4dd2ff;
-}
-
-.blog >img:hover {
-    opacity: .3;
-}*/
-
-
-
 /*OTHER PROJECTS*/
 .section {
     padding: 0 0.9375rem;
@@ -945,10 +900,10 @@ section.projectsPage {
     }
 }
 
-.item.work p {
-    font-size: 0.875rem;
-    line-height: 1.225rem
-}
+/*.item.work p {
+    font-size: 1.5rem;
+    line-height: 2.5rem
+}*/
 
 .item.work a {
     height: 100%;
@@ -959,6 +914,7 @@ section.projectsPage {
     z-index: 10;
     overflow: hidden
 }
+
 
 .item.work a:hover .overlay {
     opacity: 1
@@ -995,12 +951,16 @@ section.projectsPage {
     filter: grayscale(100%);
     display: block;
     overflow: hidden;
-    width: 100%;
+    width: auto;
     height: 200px;
+    margin:0 auto;
 }
 
 .button {
-    font-size: 0.75rem;
+    font-size: 10px;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    font-family:'Open Sans', verdana;
     line-height: 3.05rem;
     padding: 0.9375rem 1.5625rem;
     transition: all 0.3s ease;
@@ -1023,12 +983,26 @@ section.projectsPage {
     background: rgba(77, 210, 255, 0.75);
 }
 
+
 a {
     transition: all 0.3s ease;
     color: #C32F34;
     text-decoration: none;
 }
 
+.projectTitle{
+    font-size:12px;
+    text-transform:uppercase;
+    text-decoration: bold;
+    letter-spacing:1px;
+    font-family:'Open Sans', verdana;
+}
+
+/*.projectDesc{
+    font-size:11px;
+    font-family:'Open Sans', verdana;
+}
+*/
 
 /* RESUME */
 
@@ -1108,8 +1082,8 @@ a {
 
 .personalPic{
     border-radius:50%;
-    max-height: 200px;
-    width:auto;
+    max-height: relative;
+    width:180px;
     background-color:#a4e1e1;
     margin-top:50px;
 
@@ -1139,6 +1113,7 @@ a {
 }
 
 .outro {
+    padding-top:30px;
     color: white;
 }
 .contact {
@@ -1149,6 +1124,18 @@ a {
 
 
 }
+
+
+@media only screen and (min-width:720px) {
+
+     .aboutPage {
+        width:100%;
+        height:800px;
+        margin:0;
+    }
+}
+
+
 
 @media print,
        (-webkit-min-device-pixel-ratio: 1.25),
